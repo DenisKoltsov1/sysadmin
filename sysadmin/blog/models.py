@@ -11,7 +11,6 @@ class Blog(models.Model):
     photo = models.ImageField(max_length=100,upload_to='user_photo/')
     
     
-    '''
     class Meta:
         verbose_name = 'Блог'
         #verbose_name_plural = 'Пользователи'
@@ -26,4 +25,4 @@ class Blog(models.Model):
 
     class Meta:
         verbose_name_plural = 'Блог'
-        '''
+       

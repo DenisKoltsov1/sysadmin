@@ -1,4 +1,4 @@
 from django.contrib import admin
-from price.models import Price
+from .models import Head
 # Register your models here.
-admin.site.register(Price)
+admin.site.register(Head)
