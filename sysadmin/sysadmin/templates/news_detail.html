@@ -8,6 +8,13 @@
       <div class="col">
         <div class="card shadow-sm">
           <h5 class="fw-light">{{ object.title }}</h5>
+          {% for item in object_list %} 
+          
+          {% if item.img %}
+          <img width="100px" src="{{item.img.url}}">
+          {% endif %}
+          <h5 class="fw-light">{{ object.img }}</h5>
+          {% endfor %}
           <!-- <h5>{{ object.title }}</h5> -->
           <div class="card-body">
             <p class="card-text">{{object.content}}</p>

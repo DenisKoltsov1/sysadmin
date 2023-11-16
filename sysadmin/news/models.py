@@ -15,6 +15,9 @@ class News(models.Model):
     
     def get_absolute_url(self):
         return reverse('create_news' )
+    
+    def get_absolute_url(self):
+        return reverse('delete_news' )
         
     class Meta:
         verbose_name_plural = 'Новости'
